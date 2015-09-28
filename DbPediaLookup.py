@@ -19,8 +19,8 @@ def getDbPediaResourceUrl(locationString, database):
 
 		SELECT ?s WHERE {
 		{
-		?s rdfs:label \""""+ locationString.title() + """\"@en ;
-		a dbo:Location
+		?s rdfs:label \""""+ locationString.title() + """\"@en
+		# a dbo:Location
 
 		}
 		UNION
@@ -78,5 +78,5 @@ if len(userInput) > 1:
 			print locationString + " is NOT a location"
 	else:
 		print locationString + " is NOT a location"
-else:	
+else:
     print "Error: Enter a location"
