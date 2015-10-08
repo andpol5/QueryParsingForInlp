@@ -31,7 +31,7 @@ def isLocationBool(keyword):
 
 wb = load_workbook('Test data28092015.xlsx')
 
-for i in range(2, 132):
+for i in range(2, 475):
     keyword = str(wb['Sheet1']['A' + str(i)].value)
     result = 0
     if isLocationBool(keyword):
