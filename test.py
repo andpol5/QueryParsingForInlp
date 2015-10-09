@@ -9,6 +9,7 @@ def isLocationBool(keyword):
     locationString = locationString.strip()
     locationString = locationString.title()
 
+    locationString = locationString.replace("_"," ")
     resourceUrl = getDirectResourceUrl(locationString, databaseWrapper)  # Check for direct resource
 
     locationString = locationString.replace(" ", "_")
@@ -32,6 +33,7 @@ def isLocationBool(keyword):
 wb = load_workbook('Test data28092015.xlsx')
 
 for i in range(2, 475):
+    print str(i-1) + '/474'
     keyword = str(wb['Sheet1']['A' + str(i)].value)
     result = 0
     if isLocationBool(keyword):
