@@ -13,7 +13,6 @@ import re
 # This function checks if the given string has a direct resource in dbpedia database
 # and returns the resource URL
 def getDirectResourceUrl(locationString, database):
-	#database.setQuery("""SELECT DISTINCT ?Dir WHERE {?Dir rdfs:label \"""" + locationString + """\"@en; a owl:Thing}""")
 	database.setQuery("""SELECT DISTINCT ?Dir WHERE {?Dir rdfs:label \"""" + locationString + """\"@en; a owl:Thing}""")
 	database.setReturnFormat(JSON)
 	results = database.query().convert()
