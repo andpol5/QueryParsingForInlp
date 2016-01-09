@@ -14,7 +14,7 @@ wFileName = None
 # (rFileName,wFileName) = parseQueries('write')
 
 # Option 3: Simply provide your own queries and only print results to terminal
-queries=['basketball court in petaling jaya','apartments to rent in cyprus']
+queries=['dog trainers in Barcelona']
 parseQueries('terminal',inputStr=queries)
 
 

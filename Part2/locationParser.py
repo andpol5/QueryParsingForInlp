@@ -317,7 +317,7 @@ def findGeoTags(strings,avoidList=[]):
 
 
 def parseLocations(text, listOfLocs, geoTags):
-    # This function uses information about locations in text to match them with theit geo tags
+    # This function uses information about locations in text to match them with their geo tags
     # (if any) and remove from text
 
     # Match geoTags with locations and remove from text
@@ -446,12 +446,12 @@ def getWhatLabel(whatTag):
             return outputList
 
     for wlist in whatTag:
-        # If not, check if WHAT is a possible Yellow page
-        for wword in wlist.split():
-            wMatch=re.findall(r'^\b(?:'+wword+r')s?\b$',categoriesYP,flags=re.I|re.M)
-            if len(wMatch)>0:
-                outputList.append('Yellow page')
-                return outputList
+        pattern='|'.join(categoriesYP.split('\n'))
+        if pattern.endswith('|'):pattern=pattern[:-1]
+        wMatch=re.findall(r'\b(?:'+pattern+r')+s?\b',wlist,flags=re.I|re.M)
+        if len(wMatch)>0:
+            outputList.append('Yellow page')
+            return outputList
 
     # It's not a map and not Yellow page. Thus, it is Information
     outputList.append('Information')
@@ -497,7 +497,9 @@ def readXMLfile(XMLfileName):
     return (listOfQueries, listOfQryNumbers)
 
 def parseQueries(mode='terminal',readFileName=None,writeFileName=None,inputStr=None):
+    # The main interface function for processing the geographically oriented queries
 
+    # Establish read/write files based on 'mode' and arguments provided when calling the function
     if mode=='terminal':
         writeFile = None
     elif mode=='write2file':
@@ -634,7 +636,7 @@ def parseQueries(mode='terminal',readFileName=None,writeFileName=None,inputStr=N
 
 
 if __name__ == '__main__':
-
+    print 'Example query: '
     s1=['best resorts in mexico']
 
     parseQueries('terminal',inputStr=s1)
