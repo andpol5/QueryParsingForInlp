@@ -22,9 +22,10 @@ class Query:
     #Compares the Query object with the correct Query
 	#return: Boolean indicating whether the Query is correct or not 
     def is_correct(self,golden):
-        return (self.local==golden.local and self.query_what==golden.query_what and self.query_type==golden.query_type
-                and self.geo_relation==golden.geo_relation and  str(golden.query_where).split(',')[0]
-                in str(self.query_where))
+        return (self.local==golden.local and
+                ' '.join(self.query_what.lower().split())==' '.join(golden.query_what.lower().split()) and
+                self.query_type==golden.query_type and self.geo_relation==golden.geo_relation and
+                str(golden.query_where).lower().split(',')[0] in str(self.query_where).lower().split(',')[0])
     
     #Prints the Query object
     def show_query(self):
@@ -90,14 +91,15 @@ def obtain_score(to_test,golden, unsorted = True, usepaper = False):
         # If the current Query is correct
         if test_query.is_correct(golden[q_num[test_query.query_no] if unsorted else i]): 
             correct += 1
-            if test_query.local=="YES":
+            if test_query.local=="True":
                 correct_local += 1
         else:
             test_query.correct = False
-            if test_query.local=="YES":
+            if test_query.local=="True":
                 wrong_local += 1
+                # print test_query.query
         # If the Query is local
-        if golden[q_num[test_query.query_no] if unsorted else i].local == "YES":
+        if golden[q_num[test_query.query_no] if unsorted else i].local == "True":
             local += 1
     
     if usepaper: # Weird formulas
@@ -113,8 +115,8 @@ def obtain_score(to_test,golden, unsorted = True, usepaper = False):
 
 if __name__ == "__main__":
     # Tester
-    queries = parser('GC_Tr_100.xml')
-    goldens = parser('GC_Tr_100.xml')
+    queries = parser('ParsedQueries.xml')
+    goldens = parser('GC_Test_Golden_100.xml')
     unsorted = True
     usepaper = True
 

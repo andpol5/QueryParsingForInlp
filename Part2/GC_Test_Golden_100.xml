@@ -1,0 +1,802 @@
+<EXAMPLE-SET>
+    <QUERYNO>886</QUERYNO>
+    <QUERY>145 king of prussia rd</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>145 King Of Prussia Rd, Wayne, PA 19087-4517, United States</WHERE>
+    <LAT-LONG>040.00,-75.30</LAT-LONG>
+    <QUERYNO>3687</QUERYNO>
+    <QUERY>3d baby ultrasound imaging in west covina</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>3d baby ultrasound imaging</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>west covina, United States</WHERE>
+    <LAT-LONG>034.07,-117.94</LAT-LONG>
+    <QUERYNO>5897</QUERYNO>
+    <QUERY>a passage to India</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT> a passage </WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>TO</GEO-RELATION>
+    <WHERE>India</WHERE>
+    <LAT-LONG>020.00,077.00</LAT-LONG>
+    <QUERYNO>7702</QUERYNO>
+    <QUERY>about australia</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>about</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>australia, Australia</WHERE>
+    <LAT-LONG>-25.00,135.00</LAT-LONG>
+    <QUERYNO>9049</QUERYNO>
+    <QUERY>accommodation near fort william</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>accommodation</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>NEAR</GEO-RELATION>
+    <WHERE>fort william, United Kingdom</WHERE>
+    <LAT-LONG>056.82,-05.11</LAT-LONG>
+    <QUERYNO>9228</QUERYNO>
+    <QUERY>accomodation south africa</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>accomodation</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>south africa, South Africa</WHERE>
+    <LAT-LONG>-30.00,026.00</LAT-LONG>
+    <QUERYNO>12487</QUERYNO>
+    <QUERY>adopting from china</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>adopting</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>FROM</GEO-RELATION>
+    <WHERE>china, China</WHERE>
+    <LAT-LONG>035.00,105.00</LAT-LONG>
+    <QUERYNO>12609</QUERYNO>
+    <QUERY>adoption san antonio</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>adoption</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>San Antonio, TX, United States</WHERE>
+    <LAT-LONG>029.40,-98.70</LAT-LONG>
+    <QUERYNO>13696</QUERYNO>
+    <QUERY>adventure alaska travel</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>adventure travel</WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>alaska, United States</WHERE>
+    <LAT-LONG>061.30,-158.80</LAT-LONG>
+    <QUERYNO>14457</QUERYNO>
+    <QUERY>aeroporto milano linate</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>aeroporto milano linate</WHERE>
+    <LAT-LONG>045.46,009.19</LAT-LONG>
+    <QUERYNO>16203</QUERYNO>
+    <QUERY>agencia de carros</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>20315</QUERYNO>
+    <QUERY>alabama florist</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>florist</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>alabama, United States</WHERE>
+    <LAT-LONG>032.75,-86.75</LAT-LONG>
+    <QUERYNO>21413</QUERYNO>
+    <QUERY>alaska homer in rental vacation</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>homer in rental vacation</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>alaska, United States</WHERE>
+    <LAT-LONG>061.30,-158.70</LAT-LONG>
+    <QUERYNO>25266</QUERYNO>
+    <QUERY>allen tate realtors</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>allen tate realtors,NC,United States</WHERE>
+    <LAT-LONG>035.30,-80.75</LAT-LONG>
+    <QUERYNO>26020</QUERYNO>
+    <QUERY>aloha stickers</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>28158</QUERYNO>
+    <QUERY>ambassador suite hotel in atlanta</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>ambassador suite hotel</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>atlanta, United States</WHERE>
+    <LAT-LONG>033.75,-84.39</LAT-LONG>
+    <QUERYNO>31131</QUERYNO>
+    <QUERY>anaheim disneyland</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>disneyland</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>anaheim, United States</WHERE>
+    <LAT-LONG>033.84,-117.91</LAT-LONG>
+    <QUERYNO>33972</QUERYNO>
+    <QUERY>ankara</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>ankara, Turkey</WHERE>
+    <LAT-LONG>039.93,032.86</LAT-LONG>
+    <QUERYNO>34234</QUERYNO>
+    <QUERY>anna maria island hostels</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>hostels</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>anna maria island, United States</WHERE>
+    <LAT-LONG>027.51,-82.72</LAT-LONG>
+    <QUERYNO>35648</QUERYNO>
+    <QUERY>antigua </QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Antigua, Antigua and Barbuda</WHERE>
+    <LAT-LONG>017.00,-61.80</LAT-LONG>
+    <QUERYNO>37806</QUERYNO>
+    <QUERY>apartments in ottawa</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>apartments</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>ottawa, Canada</WHERE>
+    <LAT-LONG>045.27,-75.75</LAT-LONG>
+    <QUERYNO>38004</QUERYNO>
+    <QUERY>apartments to rent in cyprus</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>apartments to rent</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>cyprus, Cyprus</WHERE>
+    <LAT-LONG>035.00,033.00</LAT-LONG>
+    <QUERYNO>41768</QUERYNO>
+    <QUERY>arizona administrative code</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>administrative code</WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>arizona, United States</WHERE>
+    <LAT-LONG>034.50,-111.50</LAT-LONG>
+    <QUERYNO>42649</QUERYNO>
+    <QUERY>arizona notary public</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>notary public</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>arizona, United States</WHERE>
+    <LAT-LONG>034.50,-111.50</LAT-LONG>
+    <QUERYNO>43029</QUERYNO>
+    <QUERY>arizona used car lemon law</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>used car lemon law</WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>arizona, United States</WHERE>
+    <LAT-LONG>034.50,-111.50</LAT-LONG>
+    <QUERYNO>45422</QUERYNO>
+    <QUERY>aruba accommodations</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>accommodations</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>aruba, Colombia</WHERE>
+    <LAT-LONG>010.54,-70.20</LAT-LONG>
+    <QUERYNO>49990</QUERYNO>
+    <QUERY>atlanta medical</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>medical</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>atlanta, United States</WHERE>
+    <LAT-LONG>033.75,-84.39</LAT-LONG>
+    <QUERYNO>50260</QUERYNO>
+    <QUERY>atlanta trademark lawyer</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>trademark lawyer</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>atlanta, United States</WHERE>
+    <LAT-LONG>033.75,-84.39</LAT-LONG>
+    <QUERYNO>53159</QUERYNO>
+    <QUERY>austin housing authority</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>housing authority</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Austin, TX, United States</WHERE>
+    <LAT-LONG>030.30,-97.70</LAT-LONG>
+    <QUERYNO>54345</QUERYNO>
+    <QUERY>auto insurance canada</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>auto insurance</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>canada, Canada</WHERE>
+    <LAT-LONG>060.00,-96.00</LAT-LONG>
+    <QUERYNO>56120</QUERYNO>
+    <QUERY>aventura homes</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>homes</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Aventura, FL, United States</WHERE>
+    <LAT-LONG>025.90,-80.00</LAT-LONG>
+    <QUERYNO>58790</QUERYNO>
+    <QUERY>azerbaijan</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>azerbaijan, Azerbaijan</WHERE>
+    <LAT-LONG>040.50,047.50</LAT-LONG>
+    <QUERYNO>59582</QUERYNO>
+    <QUERY>baby cribs</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>60854</QUERYNO>
+    <QUERY>bad car credit idaho in loan</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>bad car credit in loan</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>idaho, United States</WHERE>
+    <LAT-LONG>045.50,-114.25</LAT-LONG>
+    <QUERYNO>63817</QUERYNO>
+    <QUERY>baltimore zoo</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>baltimore zoo, United States</WHERE>
+    <LAT-LONG>039.32,-76.65</LAT-LONG>
+    <QUERYNO>64814</QUERYNO>
+    <QUERY>banda panda</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>65066</QUERYNO>
+    <QUERY>banes</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>banes, Cuba</WHERE>
+    <LAT-LONG>020.96,-75.72</LAT-LONG>
+    <QUERYNO>66112</QUERYNO>
+    <QUERY>bank west of nevada</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>bank</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>WEST_OF</GEO-RELATION>
+    <WHERE>nevada, United States</WHERE>
+    <LAT-LONG>039.25,-116.75</LAT-LONG>
+    <QUERYNO>67215</QUERYNO>
+    <QUERY>barbados radio station</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>radio station</WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>barbados, Barbados</WHERE>
+    <LAT-LONG>013.17,-59.53</LAT-LONG>
+    <QUERYNO>69511</QUERYNO>
+    <QUERY>basketball court in petaling jaya</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>basketball court</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>petaling jaya, Malaysia</WHERE>
+    <LAT-LONG>003.08,101.65</LAT-LONG>
+    <QUERYNO>71802</QUERYNO>
+    <QUERY>bbc </QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>72637</QUERYNO>
+    <QUERY>beach from icon laguna talan</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>73769</QUERYNO>
+    <QUERY>beauty lexington product</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>beauty product</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Lexington, NY</WHERE>
+    <LAT-LONG>040.75,-73.90</LAT-LONG>
+    <QUERYNO>76487</QUERYNO>
+    <QUERY>bellaire high school</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>bellaire high school, United States</WHERE>
+    <LAT-LONG>029.69,-95.47</LAT-LONG>
+    <QUERYNO>77643</QUERYNO>
+    <QUERY>benidorm nightlife</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>nightlife</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>benidorm, Spain</WHERE>
+    <LAT-LONG>038.54,-00.12</LAT-LONG>
+    <QUERYNO>79720</QUERYNO>
+    <QUERY>best resorts in mexico</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>best resorts</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>mexico, Mexico</WHERE>
+    <LAT-LONG>019.43,-99.14</LAT-LONG>
+    <QUERYNO>82517</QUERYNO>
+    <QUERY>big fireworks</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>85120</QUERYNO>
+    <QUERY>bing bong</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>bing bong, Australia</WHERE>
+    <LAT-LONG>-15.62,136.35</LAT-LONG>
+    <QUERYNO>86475</QUERYNO>
+    <QUERY>bismarck state college</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Bismarck State College, 1500 Edwards Ave Bismarck, ND United States</WHERE>
+    <LAT-LONG>046.80,-100.80</LAT-LONG>
+    <QUERYNO>87272</QUERYNO>
+    <QUERY>black hills condos</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>condos</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>black hills, Australia</WHERE>
+    <LAT-LONG>-42.72,147.03</LAT-LONG>
+    <QUERYNO>89490</QUERYNO>
+    <QUERY>blossom music center</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>92227</QUERYNO>
+    <QUERY>boca raton real estate agents</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>real estate agents</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>boca raton, United States</WHERE>
+    <LAT-LONG>026.36,-80.08</LAT-LONG>
+    <QUERYNO>95478</QUERYNO>
+    <QUERY>bose car stereo</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>96283</QUERYNO>
+    <QUERY>boulevard drive in</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>boulevard drive Highland, IN 46322, United States</WHERE>
+    <LAT-LONG>041.50,-87.40</LAT-LONG>
+    <QUERYNO>97078</QUERYNO>
+    <QUERY>boy bastos</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>98565</QUERYNO>
+    <QUERY>brasil telecom </QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>telecom</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>brasil, Brazil</WHERE>
+    <LAT-LONG>-10.00,-55.00</LAT-LONG>
+    <QUERYNO>101575</QUERYNO>
+    <QUERY>britannia</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Britannia, Bacup, Lancashire, OL13, UK</WHERE>
+    <LAT-LONG>053.70,-02.20</LAT-LONG>
+    <QUERYNO>102787</QUERYNO>
+    <QUERY>bronx botanical garden</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Botanical Square, Bronx, NY 10458, United States</WHERE>
+    <LAT-LONG>040.90,-73.90</LAT-LONG>
+    <QUERYNO>103120</QUERYNO>
+    <QUERY>brooksville fl</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Brooksville, FL, United States</WHERE>
+    <LAT-LONG>028.56,-82.39</LAT-LONG>
+    <QUERYNO>105371</QUERYNO>
+    <QUERY>buenos aires</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>buenos aires, Argentina</WHERE>
+    <LAT-LONG>-34.59,-58.67</LAT-LONG>
+    <QUERYNO>110524</QUERYNO>
+    <QUERY>buy vicodin without a prescription</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>111803</QUERYNO>
+    <QUERY>cable modem</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>112664</QUERYNO>
+    <QUERY>caernarfon</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>caernarfon, United Kingdom</WHERE>
+    <LAT-LONG>053.15,-04.27</LAT-LONG>
+    <QUERYNO>113501</QUERYNO>
+    <QUERY>calabria chat</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>114698</QUERYNO>
+    <QUERY>california board of equalization</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>board of equalization</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>california, United States</WHERE>
+    <LAT-LONG>037.25,-119.75</LAT-LONG>
+    <QUERYNO>115580</QUERYNO>
+    <QUERY>california health insurance providers</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>health insurance providers</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>california, United States</WHERE>
+    <LAT-LONG>037.25,-119.75</LAT-LONG>
+    <QUERYNO>116205</QUERYNO>
+    <QUERY>california mortgage home loans</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>mortgage home loans</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>california, United States</WHERE>
+    <LAT-LONG>037.25,-119.75</LAT-LONG>
+    <QUERYNO>118214</QUERYNO>
+    <QUERY>cambridge</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>cambridge, United Kingdom</WHERE>
+    <LAT-LONG>052.20,000.12</LAT-LONG>
+    <QUERYNO>121510</QUERYNO>
+    <QUERY>canada job bank</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>job bank</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>canada, Canada</WHERE>
+    <LAT-LONG>060.00,-96.00</LAT-LONG>
+    <QUERYNO>122508</QUERYNO>
+    <QUERY>canadian gardener</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>123926</QUERYNO>
+    <QUERY>candice michelle in playboy</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>125692</QUERYNO>
+    <QUERY>cape may fishing</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>fishing</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Cape May, NJ, United States</WHERE>
+    <LAT-LONG>038.94,-74.91</LAT-LONG>
+    <QUERYNO>126929</QUERYNO>
+    <QUERY>car dealer in usa</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>car dealer</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>usa, United States</WHERE>
+    <LAT-LONG>038.90,-77.03</LAT-LONG>
+    <QUERYNO>127633</QUERYNO>
+    <QUERY>car insurance minnesota quote</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>car insurance</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>minnesota, United States</WHERE>
+    <LAT-LONG>046.25,-94.25</LAT-LONG>
+    <QUERYNO>128323</QUERYNO>
+    <QUERY>car rental las vegas nv</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>car rental</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>las vegas, United States</WHERE>
+    <LAT-LONG>036.17,-115.14</LAT-LONG>
+    <QUERYNO>129204</QUERYNO>
+    <QUERY>carcinoid tumor</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>130150</QUERYNO>
+    <QUERY>caribbean joe</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>caribbean joe, New York, United States</WHERE>
+    <LAT-LONG>040.75,-73.90</LAT-LONG>
+    <QUERYNO>131737</QUERYNO>
+    <QUERY>carrefour jeunesse emploi</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>carrefour jeunesse emploi, Canada</WHERE>
+    <LAT-LONG>045.50,-73.50</LAT-LONG>
+    <QUERYNO>132611</QUERYNO>
+    <QUERY>carte michelin</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>134857</QUERYNO>
+    <QUERY>casoli</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>casoli, Italy</WHERE>
+    <LAT-LONG>042.11,014.29</LAT-LONG>
+    <QUERYNO>135477</QUERYNO>
+    <QUERY>casual wedding dresses</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>136738</QUERYNO>
+    <QUERY>caverns in alabama</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>caverns</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>alabama, United States</WHERE>
+    <LAT-LONG>032.75,-86.75</LAT-LONG>
+    <QUERYNO>139092</QUERYNO>
+    <QUERY>cellular phone numbers</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>140753</QUERYNO>
+    <QUERY>cercanias</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Cercanías, Taberno, Spain</WHERE>
+    <LAT-LONG>037.50,-02.00</LAT-LONG>
+    <QUERYNO>145921</QUERYNO>
+    <QUERY>cheap airfares within South america</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT> cheap airfares </WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>South america</WHERE>
+    <LAT-LONG>006.67,002.25</LAT-LONG>
+    <QUERYNO>146609</QUERYNO>
+    <QUERY>cheap flight hong kong</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>cheap flight</WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>hong kong, Hong Kong S.A.R., China</WHERE>
+    <LAT-LONG>022.28,114.15</LAT-LONG>
+    <QUERYNO>147301</QUERYNO>
+    <QUERY>cheap flights to rome</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>cheap flights</WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>TO</GEO-RELATION>
+    <WHERE>rome, Italy</WHERE>
+    <LAT-LONG>041.90,012.48</LAT-LONG>
+    <QUERYNO>148008</QUERYNO>
+    <QUERY>cheap house for sale in france</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>cheap house for sale</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>IN</GEO-RELATION>
+    <WHERE>France</WHERE>
+    <LAT-LONG>046.20,002.20</LAT-LONG>
+    <QUERYNO>149643</QUERYNO>
+    <QUERY>chelan washington</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Chelan, WA,United States</WHERE>
+    <LAT-LONG>047.80,-120.00</LAT-LONG>
+    <QUERYNO>151603</QUERYNO>
+    <QUERY>chicago classifieds</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>classifieds</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>chicago, United States</WHERE>
+    <LAT-LONG>041.85,-87.65</LAT-LONG>
+    <QUERYNO>152605</QUERYNO>
+    <QUERY>chicago tribune</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>tribune</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>chicago, United States</WHERE>
+    <LAT-LONG>041.85,-87.65</LAT-LONG>
+    <QUERYNO>156375</QUERYNO>
+    <QUERY>christening gowns</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>158460</QUERYNO>
+    <QUERY>cigna dental insurance</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>159462</QUERYNO>
+    <QUERY>cinque terre sicilia</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>160518</QUERYNO>
+    <QUERY>city east of utah lake</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>city</WHAT>
+    <WHAT-TYPE>Information</WHAT-TYPE>
+    <GEO-RELATION>EAST_OF</GEO-RELATION>
+    <WHERE>utah lake</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+    <QUERYNO>160651</QUERYNO>
+    <QUERY>city national bank of west virginia</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>city national bank</WHAT>
+    <WHAT-TYPE>Yellow Page</WHAT-TYPE>
+    <GEO-RELATION>OF</GEO-RELATION>
+    <WHERE>west virginia, United States</WHERE>
+    <LAT-LONG>038.50,-82.40</LAT-LONG>
+    <QUERYNO>161546</QUERYNO>
+    <QUERY>city of loveland</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>city of loveland, United States</WHERE>
+    <LAT-LONG>040.40,-105.00</LAT-LONG>
+    <QUERYNO>163369</QUERYNO>
+    <QUERY>clark state community college</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>clark state community college, United States</WHERE>
+    <LAT-LONG>039.90,-83.80</LAT-LONG>
+    <QUERYNO>165545</QUERYNO>
+    <QUERY>clonmel</QUERY>
+    <LOCAL>True</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>Map</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>Clonmel, Uninc Sedgwick County, KS</WHERE>
+    <LAT-LONG>037.00,-97.40</LAT-LONG>
+    <QUERYNO>166135</QUERYNO>
+    <QUERY>club sandy</QUERY>
+    <LOCAL>False</LOCAL>
+    <WHAT>None</WHAT>
+    <WHAT-TYPE>None</WHAT-TYPE>
+    <GEO-RELATION>None</GEO-RELATION>
+    <WHERE>None</WHERE>
+    <LAT-LONG>None</LAT-LONG>
+</EXAMPLE-SET>

@@ -92,6 +92,8 @@ def getListofLocs(text):
     dbpHist = []  # A list for DBpedia query history
     listOfLocs = []
     listOfDisamb=[]
+    dbpLabel=''
+    listOfLocLbls=[]
     # List of prepositions to watch out when querying
     prepos = ['at', 'in', 'to', 'of', 'on', 'for', 'from', 'off', 'upon', 'and',
               'At', 'In', 'To', 'Of', 'On', 'For', 'From', 'Off', 'Upon', 'And']
@@ -133,18 +135,18 @@ def getListofLocs(text):
                         log2 = (" ".join(str1) in dbpHist)
                         # Query with >2 words and contains a preposition at the start or end of query
                         log3 = (any([w in [str1[0], str1[-1]] for w in prepos]) and c >= 3)
-
                         if log1 or log2 or log3:  # If any is true, try other combination
                             continue
 
                         # Query DBpedia
                         str1 = " ".join(words[w1:w2])
-
+                        # Query is not longer than 1 letter
+                        if len(str1)<2:continue
                         countAttempts=1
                         while True:
                             try:
                                 if countAttempts>5:raise ValueError('Connecting to DBpedia has failed.')
-                                isl = checkLocation(str1)
+                                isl,dbpLabel,lll = checkLocation(str1)
                             except ValueError:
                                 raise
                             except:
@@ -170,12 +172,13 @@ def getListofLocs(text):
                                     sentence=list(flatten_all(sentence))
                                     sentence=list(cleanUpList(sentence))
                                     listOfLocs.append(str2[0])
+                                    listOfLocLbls.append(dbpLabel)
                                     # Set flags
                                     flagRestart = True
                                     flagSearch = True
 
                         elif 0.5<isl<1: # Confidence of 0.5 is required to consider a disambiguate a location
-                            listOfDisamb.append((str1,isl))
+                            listOfDisamb.append((str1,isl,dbpLabel))
                             flagRestart = True
                             flagSearch = True
                             break
@@ -183,22 +186,25 @@ def getListofLocs(text):
     # If a definite location has not been found and there are disambiguates...
     if len(listOfLocs)==0 and len(listOfDisamb)>0:
         # Sort disambiguates by descending confidence and treat the highest score as the only location
-        listOfDisamb=sorted(listOfDisamb,key=lambda item:item[1],reverse=True)[0][0]
+        listOfDisamb=sorted(listOfDisamb,key=lambda item:item[1],reverse=True)[0]
+        locD = listOfDisamb[0]
+        labelD=listOfDisamb[2]
         # Remove the location from the sentence
         for scnt,sitem in enumerate(sentence):
-            str3=re.findall(r'\b(?:the)?\W?\b(?:'+listOfDisamb+r')\b', sitem,flags=re.IGNORECASE)
+            str3=re.findall(r'\b(?:the)?\W?\b(?:'+locD+r')\b', sitem,flags=re.IGNORECASE)
             if len(str3)>0:
-                sentence[scnt]= re.split(r'\b(?:the)?\W?\b(?:'+listOfDisamb+r')\b', sitem,flags=re.IGNORECASE)
+                sentence[scnt]= re.split(r'\b(?:the)?\W?\b(?:'+locD+r')\b', sitem,flags=re.IGNORECASE)
                 sentence=list(flatten_all(sentence))
                 sentence=list(cleanUpList(sentence))
-                listOfLocs.append(str3[0])
+                listOfLocs.append(locD)
+                listOfLocLbls.append(labelD)
 
     # If there were conversions of USA states made, convert back to abbreviations
     if len(convAbbrs) > 0:
         listOfLocs = convertUSAstates(listOfLocs, 'str2abb', convStr=convAbbrs)[0]
 
     # Return
-    return listOfLocs
+    return (listOfLocs,listOfLocLbls)
 
 
 def flatten_all(iterable):
@@ -308,17 +314,24 @@ def findGeoTags(strings,avoidList=[]):
                 lastCheck=['singles']
         # Write results to output file
         mainDict['searchString']+=[string]
-        mainDict['geoTags']+=geoTag
-        mainDict['splitStr']+=splitStr
+        if geoTag is not None:mainDict['geoTags']+=geoTag
+        if splitStr is not None: mainDict['splitStr']+=splitStr
         mainDict['avoidList']+=lastCheck
 
     # Return the output file
     return mainDict
 
 
-def parseLocations(text, listOfLocs, geoTags):
+def parseLocations(text, listOfLocs, listOfLocLbls,geoTags):
     # This function uses information about locations in text to match them with their geo tags
     # (if any) and remove from text
+
+    locPoss=[]
+    for item in listOfLocs:
+        item=' '.join(item.split())
+        locPoss.append(text[0].lower().find(item.lower()))
+    maxPos=max(locPoss)
+
 
     # Match geoTags with locations and remove from text
     flagRestart = True
@@ -328,16 +341,23 @@ def parseLocations(text, listOfLocs, geoTags):
         flagRestart = False
         for t in range(0, len(text)):
             if flagRestart: break
-            for loc in listOfLocs:
+            for locno,loc in enumerate(listOfLocs):
                 if flagRestart: break
                 for geoTag in geoTags:
                     testStr = " ".join(" ".join([geoTag, loc]).split())
                     doMatch = re.findall(testStr, text[t], re.IGNORECASE)
                     if len(doMatch) > 0:
                         text[t] = text[t].split(doMatch[0])
-                        fullLocList.append(loc)
+                        if locPoss[locno]==maxPos:
+                            fullLocList.append(listOfLocLbls[locno])
+                        else:
+                            fullLocList.append(listOfLocLbls[locno].split(',')[0])
+
                         fullGeoList.append(geoTag.strip())
                         listOfLocs.remove(loc)
+                        listOfLocLbls.remove(listOfLocLbls[locno])
+
+
                         geoTags.remove(geoTag)
                         flagRestart = True
                         text = list(flatten_all(text))
@@ -350,7 +370,7 @@ def parseLocations(text, listOfLocs, geoTags):
             flagRestart = False
             for t in range(0, len(text)):
                 if flagRestart: break
-                for loc in listOfLocs:
+                for locno,loc in enumerate(listOfLocs):
                     testStr = " ".join(" ".join([loc]).split())
                     doMatch = re.findall(r'\b' + testStr + r'\b', text[t], flags=re.IGNORECASE)
                     if len(doMatch) > 0:
@@ -359,7 +379,14 @@ def parseLocations(text, listOfLocs, geoTags):
                         listOfLocs.remove(loc)
                         flagRestart = True
                         text = list(flatten_all(text))
-                        fullLocList.append(doMatch[0])
+
+                        if locPoss[locno]==maxPos:
+                            fullLocList.append(listOfLocLbls[locno])
+                        else:
+                            fullLocList.append(listOfLocLbls[locno].split(',')[0])
+
+                        listOfLocLbls.remove(listOfLocLbls[locno])
+                        locPoss.remove(locPoss[locno])
                         break
 
     text=list(cleanUpList(text))
@@ -378,28 +405,34 @@ def getGeoTagLabel(geoTags):
         geoCat=None
 
     for gItem in geoTags:
-        # If geo tags is a single word, this word is a class name
+        # If geo tags is a single word (except 'within'), this word is a class name
         if len(gItem.split())==1: #only 1 word
-            geoCat.append(gItem.upper())
-            continue
+            if gItem.lower()=='within':
+                geoCat.append('IN')
+                continue
+            else:
+                geoCat.append(gItem.upper())
+                continue
         # If geo tags contains more words,
 
         reOb = re.compile(r"\b(?:south|west|north|east)\W?(?:west|east)?\b\W?\b(?:of|to)+\b", re.IGNORECASE)
         geoMatch=reOb.findall(gItem)
         if len(geoMatch)>0:
-            geoCat.append(geoMatch[0].upper())
+            geoCat.append('_'.join(geoMatch[0].upper().split()))
             continue
 
         reOb = re.compile(r"\b(?:to)+\b\W?(?:the)?\W?\b(?:south|west|north|east)\W?(?:west|east)?\b\W?\b", re.IGNORECASE)
         geoMatch=reOb.findall(gItem)
         if len(geoMatch)>0:
-            geoCat.append((re.findall(r"\b(?:south|west|north|east)\W?(?:west|east)?\b",gItem,re.IGNORECASE)[0]).upper()+' TO')
+            m=re.findall(r"\b(?:south|west|north|east)\W?(?:west|east)?\b",gItem,re.IGNORECASE)[0]
+            geoCat.append('_'.join(m.upper().split())+'_TO')
             continue
 
         reOb = re.compile(r"\b(?:of|in)+\b\W?(?:the)?\W?\b(?:south|west|north|east)\W?(?:west|east)?\b\W?\b", re.IGNORECASE)
         geoMatch=reOb.findall(gItem)
         if len(geoMatch)>0:
-            geoCat.append((re.findall(r"\b(?:south|west|north|east)\W?(?:west|east)?\b",gItem,re.IGNORECASE)[0]).upper()+' OF')
+            m=re.findall(r"\b(?:south|west|north|east)\W?(?:west|east)?\b",gItem,re.IGNORECASE)[0]
+            geoCat.append('_'.join(m.upper().split())+'_OF')
             continue
 
         reOb=re.compile(r"\b(?:in)\W+(?:or|and)\W+(?:around)\b", re.IGNORECASE)
@@ -442,7 +475,7 @@ def getWhatLabel(whatTag):
         # Firstly check if a WHAT is a possible street name
         streetTypeMatch = re.findall(r'.+\b('+streetAbbrs+r')\b\W?$', wlist,flags=re.IGNORECASE)
         if len(streetTypeMatch)>0:
-            outputList.append('Map')
+            outputList.append('Address')
             return outputList
 
     for wlist in whatTag:
@@ -450,7 +483,7 @@ def getWhatLabel(whatTag):
         if pattern.endswith('|'):pattern=pattern[:-1]
         wMatch=re.findall(r'\b(?:'+pattern+r')+s?\b',wlist,flags=re.I|re.M)
         if len(wMatch)>0:
-            outputList.append('Yellow page')
+            outputList.append('Yellow Page')
             return outputList
 
     # It's not a map and not Yellow page. Thus, it is Information
@@ -562,45 +595,51 @@ def parseQueries(mode='terminal',readFileName=None,writeFileName=None,inputStr=N
         noCheckList=[]
         while True:
             geoTags = findGeoTags(text,noCheckList)
-            listOfLocs = getListofLocs(geoTags['splitStr'])
-            if len(listOfLocs) > 0 or 'final' in geoTags['avoidList']:
+            listOfLocs,listOfLocLbls = getListofLocs(geoTags['splitStr'])
+            if len(listOfLocs) > 0 or 'Final' in geoTags['avoidList']:
                 break
             noCheckList=geoTags['avoidList']
 
         if len(listOfLocs) > 0:
-            decisionLOC = "YES"
-            fullLocList, fullGeoList, whatTag = parseLocations(text, listOfLocs, geoTags['geoTags'])
+            decisionLOC = str(True)
+            fullLocList, fullGeoList, whatTag = parseLocations(text, listOfLocs,listOfLocLbls, geoTags['geoTags'])
             fullGeoLabels=getGeoTagLabel(fullGeoList)
             fullWhatLabels=getWhatLabel(whatTag)
 
             if fullWhatLabels==['Map']:
-                writeWHAT = None
+                writeWHAT = str(None)
+                writeLOC = ",".join(whatTag+fullLocList)
+                writeGEO=str(None)
+
+            elif fullWhatLabels==['Address']:
+                fullWhatLabels=['Map']
+                writeWHAT = str(None)
                 writeLOC = origText
-                writeGEO=None
+                writeGEO=str(None)
             else:
                 writeWHAT = ",".join(whatTag)
                 writeLOC = ",".join(fullLocList)
                 if fullGeoLabels is not None:
                     writeGEO = ",".join(fullGeoLabels)
                 else:
-                    writeGEO=None
+                    writeGEO=str(None)
 
             if len(fullWhatLabels)>0:
                 writeWHATTYPE= fullWhatLabels[0]
             else:
-                writeWHATTYPE=None
+                writeWHATTYPE=str(None)
 
         else:
-            decisionLOC = "NO"
-            writeWHAT = None
-            writeWHATTYPE = None
-            writeGEO = None
-            writeLOC = None
+            decisionLOC = str(False)
+            writeWHAT = str(None)
+            writeWHATTYPE = str(None)
+            writeGEO = str(None)
+            writeLOC = str(None)
 
         if not qryNumbers is None:
             writeQNo = qryNumbers[qNum]
         else:
-            writeQNo = None
+            writeQNo = str(None)
 
         XMLReady.append(xmlC.Query(
             writeQNo,
